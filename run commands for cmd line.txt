@@ -1,0 +1,7 @@
+1. java -cp BBB.jar;. com/asambhava/groupchatws/MessageQueue
+2. pm2 start main.config.js
+3. pm2 start LoadBalancer.js
+4. artillery run hello.yml
+
+important instruction:
+please set the class path -cp in main.config.js on the basis of folder locations

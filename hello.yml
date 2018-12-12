@@ -1,0 +1,17 @@
+---
+config:
+  phases:
+    -
+      arrivalRate: 10
+      duration: 160
+  target: "ws://127.0.0.1:8000"
+  ws:
+    rejectUnauthorized: false
+scenarios:
+  -
+    engine: ws
+    flow:
+      -
+        send: "test message"
+      -
+        think: 200
